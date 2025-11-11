@@ -1,0 +1,56 @@
+{
+  "id": "E-PixelCompressionTree",
+  "name": "Pixel Compression Tree",
+  "type": "programming",
+  "difficulty": "Div2-C / Div1-B",
+  "time_limit": 2000,
+  "memory_limit": 512,
+  "input_file": "standard input",
+  "output_file": "standard output",
+  "languages": ["Python 3.8", "C++17", "Java 17"],
+  "constraints": {
+    "n": {
+      "min": 2,
+      "max": 200000
+    },
+    "p": {
+      "min": 0,
+      "max": 1000000000
+    },
+    "a[i]": {
+      "min": 1,
+      "max": 1000000000
+    }
+  },
+  "samples": [
+    {
+      "input": "4 3\n5 2 8 3\n",
+      "output": "38\n"
+    },
+    {
+      "input": "5 2\n4 7 6 3 9\n",
+      "output": "59\n"
+    },
+    {
+      "input": "6 1\n1 1 2 3 5 8\n",
+      "output": "44\n"
+    }
+  ],
+  "author": "Mansi (India)",
+  "tags": [
+    "greedy",
+    "priority-queue",
+    "huffman-tree",
+    "data-compression",
+    "optimization"
+  ],
+  "solution": {
+    "time_complexity": "O(n log n)",
+    "space_complexity": "O(n)",
+    "approach": "Huffman-like greedy merging using a min-heap, with fixed penalty p added to each merge."
+  },
+  "checker": {
+    "type": "exact",
+    "precision": 1e-9
+  }
+}
